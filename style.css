@@ -1,0 +1,20 @@
+.maison{
+    float:left;
+    height: 10px;
+    width: 10px;
+}
+.immeuble{
+    float:left;
+    height: 250px;
+    width: 250px;
+}
+.caserne{
+    float:left;
+    height: 250px;
+    width: 250px;
+}
+.hopital{
+    float:left;
+    height: 250px;
+    width: 250px;
+}
