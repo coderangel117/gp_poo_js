@@ -43,54 +43,62 @@ class Maison extends Batiment{
 
 /* ajouter classe caserne */
 class Caserne extends Batiment{
-    constructor(UneAdresse, UnNbPieces)
+    constructor(UneAdresse, UnNbCamions, UnNbFirefighters)
     {
         super(UneAdresse);
-        this.nbPiece = UnNbPieces;
+        this.Firefighter =  UnNbFirefighters;
+        this.nbCamion = UnNbCamions;
         super.SetImage("caserne.jpg");
     }
 
-    SetNbPiece(UnNbPieces){
-        this.nbPiece = UnNbPieces;
+    SetNbFirefighter(UnNbFirefighters){
+        this.nbFirefighter= UnNbFirefighters;
+    }
+    GetNbFirefighter(){
+        return this.nbFirefighter;
     }
 
-    GetNbPiece(){
-        return this.nbPiece;
+    SetNbCamion(UnNbCamions){
+        this.nbCamion= UnNbCamions;
+    }
+
+    GetNbCamion(){
+        return this.nbCamion;
     }
 }
 /* - ajouter classe hopital */
 
 class Hopital extends Batiment{
-    constructor(UneAdresse, UnNbPieces)
+    constructor(UneAdresse, UnNbServices)
     {
         super(UneAdresse);
-        this.nbPiece = UnNbPieces;
+        this.nbService = UnNbServices;
         super.SetImage("hopital.png");
     }
 
-    SetNbPiece(UnNbPieces){
-        this.nbPiece = UnNbPieces;
+    SetNbService(UnNbServices){
+        this.nbService = UnNbServices;
     }
 
-    GetNbPiece(){
-        return this.nbPiece;
+    GetNbService(){
+        return this.nbService;
     }
 }
 
 /* - ajouter classe immeuble */
 class Immeuble extends Batiment{
-    constructor(UneAdresse, UnNbPieces)
+    constructor(UneAdresse, UnNbEtages)
     {
         super(UneAdresse);
-        this.nbPiece = UnNbPieces;
+        this.nbEtage = UnNbEtages;
         super.SetImage("immeuble.png");
     }
 
-    SetNbPiece(UnNbPieces){
-        this.nbPiece = UnNbPieces;
+    SetnbEtage(UnNbEtages){
+        this.nbPiece = UnNbEtages;
     }
 
-    GetNbPiece(){
-        return this.nbPiece;
+    GetNbEtage(){
+        return this.nbEtage;
     }
 }
